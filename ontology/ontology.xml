@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/dqts#"
+     xml:base="https://w3id.org/dqts"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#">
+    <owl:Ontology rdf:about="https://w3id.org/dqts">
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-07-19</terms:created>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;</terms:creator>
+        <terms:description xml:lang="en">The DQTS (Data Quality for Time Series) ontology describes data quality dimensions for time series. It is aimed to be used as an extension of W3C&apos;s DQV (Data Quality Vocabulary) for representing dimensions.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-14</terms:issued>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Quality for Time Series (DQTS) ontology</terms:title>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dqts</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/dqts#"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#Dimension -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dqv#Dimension"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/dqts# -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dqts#"/>
+    
+
+
+    <!-- https://w3id.org/dqts#completeness -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dqts#completeness">
+        <rdfs:comment xml:lang="en">Proportion of values available in a dataset. It is complementary to the proportion of missing values.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/dqts#"/>
+        <rdfs:label xml:lang="en">completeness</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dqts#completenessOfObservations -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dqts#completenessOfObservations">
+        <rdfs:comment xml:lang="en">Proportion of completed observations available in a dataset. It is complementary to the proportion of missing observations.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/dqts#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">completeness of Observations</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dqts#completenessOfVariables -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dqts#completenessOfVariables">
+        <rdfs:comment xml:lang="en">Proportion of completed variables available in a dataset. It is complementary to proportion of missing variables.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/dqts#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">completeness of Variables</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dqts#consistency -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dqts#consistency">
+        <rdfs:comment xml:lang="en">Mean (of each variable) of the proportion of values within the confidence intervals of 80% in a dataset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/dqts#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">consistency</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dqts#format -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dqts#format">
+        <rdfs:comment xml:lang="en">Proportion of variables with the correct format (e.g. numeric, String, ...) in a dataset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/dqts#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">format</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dqts#moderation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dqts#moderation">
+        <rdfs:comment xml:lang="en">Mean (of each variable) of the proportion of values within the confidence intervals of 99% in a dataset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/dqts#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">moderation</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dqts#name -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dqts#name">
+        <rdfs:comment xml:lang="en">Proportion of variables with the expected name in a dataset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/dqts#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dqts#range -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dqts#range">
+        <rdfs:comment xml:lang="en">Proportion of values within a boundaries established in a dataset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/dqts#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">range</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dqts#timeUniqueness -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dqts#timeUniqueness">
+        <rdfs:comment xml:lang="en">Proportion of unique timestamps in a dataset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/dqts#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">time uniqueness</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dqts#timeliness -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dqts#timeliness">
+        <rdfs:comment xml:lang="en">Proportion of waiting times between observations considered correct (less than the maximum established) in a dataset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/dqts#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">timeliness</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dqts#typicality -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dqts#typicality">
+        <rdfs:comment xml:lang="en">Mean (of each variable) of the proportion of values within the confidence intervals of 95% in a dataset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/dqts#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">typicality</rdfs:label>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

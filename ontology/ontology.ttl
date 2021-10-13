@@ -1,0 +1,168 @@
+@prefix : <https://w3id.org/dqts#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/dqts> .
+
+<https://w3id.org/dqts> rdf:type owl:Ontology ;
+                         <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                         <http://purl.org/dc/terms/created> "2021-07-19"^^xsd:string ;
+                         <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>"^^xsd:string ;
+                         <http://purl.org/dc/terms/description> "The DQTS (Data Quality for Time Series) ontology describes data quality dimensions for time series. It is aimed to be used as an extension of W3C's DQV (Data Quality Vocabulary) for representing dimensions."@en ;
+                         <http://purl.org/dc/terms/issued> "2021-10-14"^^xsd:string ;
+                         <http://purl.org/dc/terms/title> "Data Quality for Time Series (DQTS) ontology"^^xsd:string ;
+                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "dqts"^^xsd:string ;
+                         <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                         owl:versionInfo 0.1 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/ns/dqv#Dimension
+<http://www.w3.org/ns/dqv#Dimension> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/dqts#
+: rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/dqts#completeness
+:completeness rdf:type owl:NamedIndividual ;
+              rdfs:comment "Proportion of values available in a dataset. It is complementary to the proportion of missing values."@en ;
+              rdfs:isDefinedBy : ;
+              rdfs:label "completeness"@en ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/dqts#completenessOfObservations
+:completenessOfObservations rdf:type owl:NamedIndividual ;
+                            rdfs:comment "Proportion of completed observations available in a dataset. It is complementary to the proportion of missing observations."@en ;
+                            rdfs:isDefinedBy "https://w3id.org/dqts#"^^xsd:string ;
+                            rdfs:label "completeness of Observations"@en ;
+                            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/dqts#completenessOfVariables
+:completenessOfVariables rdf:type owl:NamedIndividual ;
+                         rdfs:comment "Proportion of completed variables available in a dataset. It is complementary to proportion of missing variables."@en ;
+                         rdfs:isDefinedBy "https://w3id.org/dqts#"^^xsd:string ;
+                         rdfs:label "completeness of Variables"@en ;
+                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/dqts#consistency
+:consistency rdf:type owl:NamedIndividual ;
+             rdfs:comment "Mean (of each variable) of the proportion of values within the confidence intervals of 80% in a dataset."@en ;
+             rdfs:isDefinedBy "https://w3id.org/dqts#"^^xsd:string ;
+             rdfs:label "consistency"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/dqts#format
+:format rdf:type owl:NamedIndividual ;
+        rdfs:comment "Proportion of variables with the correct format (e.g. numeric, String, ...) in a dataset."@en ;
+        rdfs:isDefinedBy "https://w3id.org/dqts#"^^xsd:string ;
+        rdfs:label "format"@en ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/dqts#moderation
+:moderation rdf:type owl:NamedIndividual ;
+            rdfs:comment "Mean (of each variable) of the proportion of values within the confidence intervals of 99% in a dataset."@en ;
+            rdfs:isDefinedBy "https://w3id.org/dqts#"^^xsd:string ;
+            rdfs:label "moderation"@en ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/dqts#name
+:name rdf:type owl:NamedIndividual ;
+      rdfs:comment "Proportion of variables with the expected name in a dataset."@en ;
+      rdfs:isDefinedBy "https://w3id.org/dqts#"^^xsd:string ;
+      rdfs:label "name"@en ;
+      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/dqts#range
+:range rdf:type owl:NamedIndividual ;
+       rdfs:comment "Proportion of values within a boundaries established in a dataset."@en ;
+       rdfs:isDefinedBy "https://w3id.org/dqts#"^^xsd:string ;
+       rdfs:label "range"@en ;
+       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/dqts#timeUniqueness
+:timeUniqueness rdf:type owl:NamedIndividual ;
+                rdfs:comment "Proportion of unique timestamps in a dataset."@en ;
+                rdfs:isDefinedBy "https://w3id.org/dqts#"^^xsd:string ;
+                rdfs:label "time uniqueness"@en ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/dqts#timeliness
+:timeliness rdf:type owl:NamedIndividual ;
+            rdfs:comment "Proportion of waiting times between observations considered correct (less than the maximum established) in a dataset."@en ;
+            rdfs:isDefinedBy "https://w3id.org/dqts#"^^xsd:string ;
+            rdfs:label "timeliness"@en ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  https://w3id.org/dqts#typicality
+:typicality rdf:type owl:NamedIndividual ;
+            rdfs:comment "Mean (of each variable) of the proportion of values within the confidence intervals of 95% in a dataset."@en ;
+            rdfs:isDefinedBy "https://w3id.org/dqts#"^^xsd:string ;
+            rdfs:label "typicality"@en ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

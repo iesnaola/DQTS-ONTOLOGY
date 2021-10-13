@@ -1,0 +1,151 @@
+<https://w3id.org/dqts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/dqts> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
+<https://w3id.org/dqts> <http://purl.org/dc/terms/created> "2021-07-19" .
+<https://w3id.org/dqts> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>" .
+<https://w3id.org/dqts> <http://purl.org/dc/terms/description> "The DQTS (Data Quality for Time Series) ontology describes data quality dimensions for time series. It is aimed to be used as an extension of W3C's DQV (Data Quality Vocabulary) for representing dimensions."@en .
+<https://w3id.org/dqts> <http://purl.org/dc/terms/issued> "2021-10-14" .
+<https://w3id.org/dqts> <http://purl.org/dc/terms/title> "Data Quality for Time Series (DQTS) ontology" .
+<https://w3id.org/dqts> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dqts" .
+<https://w3id.org/dqts> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/dqts#> .
+<https://w3id.org/dqts> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/dqv#Dimension
+<http://www.w3.org/ns/dqv#Dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/dqts#
+<https://w3id.org/dqts#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/dqts#completeness
+<https://w3id.org/dqts#completeness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dqts#completeness> <http://www.w3.org/2000/01/rdf-schema#comment> "Proportion of values available in a dataset. It is complementary to the proportion of missing values."@en .
+<https://w3id.org/dqts#completeness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/dqts#> .
+<https://w3id.org/dqts#completeness> <http://www.w3.org/2000/01/rdf-schema#label> "completeness"@en .
+<https://w3id.org/dqts#completeness> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/dqts#completenessOfObservations
+<https://w3id.org/dqts#completenessOfObservations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dqts#completenessOfObservations> <http://www.w3.org/2000/01/rdf-schema#comment> "Proportion of completed observations available in a dataset. It is complementary to the proportion of missing observations."@en .
+<https://w3id.org/dqts#completenessOfObservations> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/dqts#" .
+<https://w3id.org/dqts#completenessOfObservations> <http://www.w3.org/2000/01/rdf-schema#label> "completeness of Observations"@en .
+<https://w3id.org/dqts#completenessOfObservations> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/dqts#completenessOfVariables
+<https://w3id.org/dqts#completenessOfVariables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dqts#completenessOfVariables> <http://www.w3.org/2000/01/rdf-schema#comment> "Proportion of completed variables available in a dataset. It is complementary to proportion of missing variables."@en .
+<https://w3id.org/dqts#completenessOfVariables> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/dqts#" .
+<https://w3id.org/dqts#completenessOfVariables> <http://www.w3.org/2000/01/rdf-schema#label> "completeness of Variables"@en .
+<https://w3id.org/dqts#completenessOfVariables> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/dqts#consistency
+<https://w3id.org/dqts#consistency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dqts#consistency> <http://www.w3.org/2000/01/rdf-schema#comment> "Mean (of each variable) of the proportion of values within the confidence intervals of 80% in a dataset."@en .
+<https://w3id.org/dqts#consistency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/dqts#" .
+<https://w3id.org/dqts#consistency> <http://www.w3.org/2000/01/rdf-schema#label> "consistency"@en .
+<https://w3id.org/dqts#consistency> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/dqts#format
+<https://w3id.org/dqts#format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dqts#format> <http://www.w3.org/2000/01/rdf-schema#comment> "Proportion of variables with the correct format (e.g. numeric, String, ...) in a dataset."@en .
+<https://w3id.org/dqts#format> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/dqts#" .
+<https://w3id.org/dqts#format> <http://www.w3.org/2000/01/rdf-schema#label> "format"@en .
+<https://w3id.org/dqts#format> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/dqts#moderation
+<https://w3id.org/dqts#moderation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dqts#moderation> <http://www.w3.org/2000/01/rdf-schema#comment> "Mean (of each variable) of the proportion of values within the confidence intervals of 99% in a dataset."@en .
+<https://w3id.org/dqts#moderation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/dqts#" .
+<https://w3id.org/dqts#moderation> <http://www.w3.org/2000/01/rdf-schema#label> "moderation"@en .
+<https://w3id.org/dqts#moderation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/dqts#name
+<https://w3id.org/dqts#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dqts#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Proportion of variables with the expected name in a dataset."@en .
+<https://w3id.org/dqts#name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/dqts#" .
+<https://w3id.org/dqts#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+<https://w3id.org/dqts#name> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/dqts#range
+<https://w3id.org/dqts#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dqts#range> <http://www.w3.org/2000/01/rdf-schema#comment> "Proportion of values within a boundaries established in a dataset."@en .
+<https://w3id.org/dqts#range> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/dqts#" .
+<https://w3id.org/dqts#range> <http://www.w3.org/2000/01/rdf-schema#label> "range"@en .
+<https://w3id.org/dqts#range> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/dqts#timeUniqueness
+<https://w3id.org/dqts#timeUniqueness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dqts#timeUniqueness> <http://www.w3.org/2000/01/rdf-schema#comment> "Proportion of unique timestamps in a dataset."@en .
+<https://w3id.org/dqts#timeUniqueness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/dqts#" .
+<https://w3id.org/dqts#timeUniqueness> <http://www.w3.org/2000/01/rdf-schema#label> "time uniqueness"@en .
+<https://w3id.org/dqts#timeUniqueness> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/dqts#timeliness
+<https://w3id.org/dqts#timeliness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dqts#timeliness> <http://www.w3.org/2000/01/rdf-schema#comment> "Proportion of waiting times between observations considered correct (less than the maximum established) in a dataset."@en .
+<https://w3id.org/dqts#timeliness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/dqts#" .
+<https://w3id.org/dqts#timeliness> <http://www.w3.org/2000/01/rdf-schema#label> "timeliness"@en .
+<https://w3id.org/dqts#timeliness> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/dqts#typicality
+<https://w3id.org/dqts#typicality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/dqts#typicality> <http://www.w3.org/2000/01/rdf-schema#comment> "Mean (of each variable) of the proportion of values within the confidence intervals of 95% in a dataset."@en .
+<https://w3id.org/dqts#typicality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/dqts#" .
+<https://w3id.org/dqts#typicality> <http://www.w3.org/2000/01/rdf-schema#label> "typicality"@en .
+<https://w3id.org/dqts#typicality> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
