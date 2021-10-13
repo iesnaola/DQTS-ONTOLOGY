@@ -133,6 +133,7 @@
     <!-- https://w3id.org/dqts#completeness -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/dqts#completeness">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Proportion of values available in a dataset. It is complementary to the proportion of missing values.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/dqts#"/>
         <rdfs:label xml:lang="en">completeness</rdfs:label>
@@ -144,6 +145,7 @@
     <!-- https://w3id.org/dqts#completenessOfObservations -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/dqts#completenessOfObservations">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Proportion of completed observations available in a dataset. It is complementary to the proportion of missing observations.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/dqts#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">completeness of Observations</rdfs:label>
@@ -155,6 +157,7 @@
     <!-- https://w3id.org/dqts#completenessOfVariables -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/dqts#completenessOfVariables">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Proportion of completed variables available in a dataset. It is complementary to proportion of missing variables.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/dqts#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">completeness of Variables</rdfs:label>
@@ -166,6 +169,7 @@
     <!-- https://w3id.org/dqts#consistency -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/dqts#consistency">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Mean (of each variable) of the proportion of values within the confidence intervals of 80% in a dataset.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/dqts#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">consistency</rdfs:label>
@@ -177,6 +181,7 @@
     <!-- https://w3id.org/dqts#format -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/dqts#format">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Proportion of variables with the correct format (e.g. numeric, String, ...) in a dataset.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/dqts#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">format</rdfs:label>
@@ -188,6 +193,7 @@
     <!-- https://w3id.org/dqts#moderation -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/dqts#moderation">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Mean (of each variable) of the proportion of values within the confidence intervals of 99% in a dataset.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/dqts#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">moderation</rdfs:label>
@@ -199,6 +205,7 @@
     <!-- https://w3id.org/dqts#name -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/dqts#name">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Proportion of variables with the expected name in a dataset.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/dqts#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">name</rdfs:label>
@@ -210,6 +217,7 @@
     <!-- https://w3id.org/dqts#range -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/dqts#range">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Proportion of values within a boundaries established in a dataset.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/dqts#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">range</rdfs:label>
@@ -221,6 +229,7 @@
     <!-- https://w3id.org/dqts#timeUniqueness -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/dqts#timeUniqueness">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Proportion of unique timestamps in a dataset.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/dqts#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">time uniqueness</rdfs:label>
@@ -232,6 +241,7 @@
     <!-- https://w3id.org/dqts#timeliness -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/dqts#timeliness">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Proportion of waiting times between observations considered correct (less than the maximum established) in a dataset.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/dqts#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">timeliness</rdfs:label>
@@ -243,6 +253,7 @@
     <!-- https://w3id.org/dqts#typicality -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/dqts#typicality">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
         <rdfs:comment xml:lang="en">Mean (of each variable) of the proportion of values within the confidence intervals of 95% in a dataset.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/dqts#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">typicality</rdfs:label>
